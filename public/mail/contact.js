@@ -15,7 +15,10 @@ $(function () {
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "contact.php",
+                url: "contact/submit",
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                },
                 type: "POST",
                 data: {
                     name: name,
@@ -24,7 +27,7 @@ $(function () {
                     message: message
                 },
                 cache: false,
-                success: function () {
+                success: function (responce) {
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");

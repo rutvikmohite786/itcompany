@@ -19,10 +19,20 @@ use App\Http\Controllers\WebPageController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('home', [HomePageController::class, 'index']);
+/*Route::get('/webservice', function () {
+    return view('pages.webservice');
+});
+Route::get('/development', function () {
+    return view('pages.devservice');
+});*/
+Route::get('home', [HomePageController::class, 'index'])->name('home');
 Route::controller(WebPageController::class)->group(function () {
-    Route::get('/about', 'about');
-    Route::get('/service', 'service');
-    Route::get('/pricing', 'pricing');
-    Route::get('/contact', 'contact');
+    Route::get('/about', 'about')->name('about');
+    Route::get('/service', 'service')->name('service');
+    Route::get('/pricing', 'pricing')->name('pricing');
+    Route::get('/contact', 'contact')->name('contact');
+    Route::get('/development', 'development')->name('development');
+    Route::get('/webservice', 'webservice')->name('webservice');
+    Route::post('/contact/submit', 'contactStore')->name('contact.store');
+
 });

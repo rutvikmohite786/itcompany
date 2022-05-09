@@ -14,13 +14,6 @@
                       <a href="about" class="nav-item nav-link">About</a>
                       <a href="service" class="nav-item nav-link">Services</a>
                       <a href="pricing" class="nav-item nav-link">Pricing</a>
-                      <div class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                          <div class="dropdown-menu border-0 rounded-0 m-0">
-                              <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                              <a href="single.html" class="dropdown-item">Blog Detail</a>
-                          </div>
-                      </div>
                       <a href="contact" class="nav-item nav-link">Contact</a>
                   </div>
               </div>

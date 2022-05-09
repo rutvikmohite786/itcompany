@@ -33,6 +33,7 @@
                   <div class="contact-form">
                       <div id="success"></div>
                       <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                          @csrf
                           <div class="form-row">
                               <div class="col-md-6">
                                   <div class="control-group">

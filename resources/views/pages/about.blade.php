@@ -9,7 +9,10 @@
                   <small class="bg-primary text-white text-uppercase font-weight-bold px-1">Who We Are</small>
                   <h1 class="mt-2 mb-4">{{$user['title']}}</h1>
                   <p class="mb-4">{{$user['description']}}.</p>
-                  <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Read More</a>
+                  @if(Route::is('home') )
+                  <a href="about" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Read More</a>
+                  @endif
+
               </div>
           </div>
           <div class="row mt-4">
