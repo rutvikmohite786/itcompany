@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\WebPageController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,19 +19,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/home', function () {
-    return view('pages.home');
+Route::get('home', [HomePageController::class, 'index']);
+Route::controller(WebPageController::class)->group(function () {
+    Route::get('/about', 'about');
+    Route::get('/service', 'service');
+    Route::get('/pricing', 'pricing');
+    Route::get('/contact', 'contact');
 });
-Route::get('/about', function () {
-    return view('pages.aboutpage');
-});
-Route::get('/service', function () {
-    return view('pages.servicepage');
-});
-Route::get('/pricing', function () {
-    return view('pages.pricingpage');
-});
-Route::get('/contact', function () {
-    return view('pages.contactpage');
-});
-

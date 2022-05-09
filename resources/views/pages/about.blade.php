@@ -7,8 +7,8 @@
               </div>
               <div class="col-lg-7 mt-5 mt-lg-0">
                   <small class="bg-primary text-white text-uppercase font-weight-bold px-1">Who We Are</small>
-                  <h1 class="mt-2 mb-4">Most Effective Creative Service Provider For Companies</h1>
-                  <p class="mb-4">Eirmod est dolor nonumy sea amet dolore erat sit dolor et dolor vero. Tempor ipsum at justo amet at ipsum justo. Aiam kasd sea sit dolor duo elitr dolor amet, justo est ipsum amet dolor ut ipsum. Labore diam et nonumy amet dolores. Volup sit labore dolores erat, magna justo sed lorem kasd ea dolor. Labore sit clita invidunt, est dolores lorem sed ipsum kasd no amet ipsum.</p>
+                  <h1 class="mt-2 mb-4">{{$user['title']}}</h1>
+                  <p class="mb-4">{{$user['description']}}.</p>
                   <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Read More</a>
               </div>
           </div>
@@ -18,7 +18,7 @@
                       <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
                       <div class="d-flex flex-column">
                           <h5 class="font-weight-bold">Our Office</h5>
-                          <p class="m-0">123 Street, New York, USA</p>
+                          <p class="m-0">{{$user['office_address']}}</p>
                       </div>
                   </div>
               </div>
@@ -27,7 +27,7 @@
                       <i class="fa fa-2x fa-envelope-open text-primary mr-3"></i>
                       <div class="d-flex flex-column">
                           <h5 class="font-weight-bold">Email Us</h5>
-                          <p class="m-0">info@example.com</p>
+                          <p class="m-0">{{$user['email']}}</p>
                       </div>
                   </div>
               </div>
@@ -36,7 +36,7 @@
                       <i class="fas fa-2x fa-phone-alt text-primary mr-3"></i>
                       <div class="d-flex flex-column">
                           <h5 class="font-weight-bold">Call Us</h5>
-                          <p class="m-0">+012 345 6789</p>
+                          <p class="m-0">{{$user['mobile']}}</p>
                       </div>
                   </div>
               </div>

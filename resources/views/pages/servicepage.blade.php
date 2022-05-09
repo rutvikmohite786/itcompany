@@ -11,7 +11,6 @@
     </div>
 </div>
 <!-- Page Header Start -->
-@include('pages.about')
 @include('pages.service')
 @include('pages.footer')
 @endsection
