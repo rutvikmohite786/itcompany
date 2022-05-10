@@ -9,7 +9,7 @@
           <div class="carousel-inner">
               @foreach($carsol as $carsol_info)
               <div class="carousel-item active" data-id="{{$carsol_info->id-1}}">
-                  <img class="img-fluid" src="img/carousel-1.jpg" alt="Image">
+                  <img class="img-fluid" src="{{ asset('img/carousel-1.jpg') }}" alt="Image">
                   <div class="carousel-caption d-flex align-items-center justify-content-center">
                       <div class="p-5" style="width: 100%; max-width: 900px;">
                           <h5 class="text-white text-uppercase mb-md-3">Creative Agency</h5>

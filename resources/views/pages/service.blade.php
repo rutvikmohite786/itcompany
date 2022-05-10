@@ -17,7 +17,7 @@
                               <div class="d-flex flex-column">
                                   <h4 class="font-weight-bold mb-3">{{$ser->title}}</h4>
                                   <p>{{$ser->description}}</p>
-                                  <a class="font-weight-semi-bold" href="{{$ser->url}}">Read More <i class="fa fa-angle-double-right"></i></a>
+                                  <a class="font-weight-semi-bold" href="/{{$ser->url}}">Read More <i class="fa fa-angle-double-right"></i></a>
                               </div>
                           </div>
                       </div>

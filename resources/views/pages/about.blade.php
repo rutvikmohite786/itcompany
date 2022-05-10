@@ -3,7 +3,7 @@
       <div class="container">
           <div class="row align-items-center pb-1">
               <div class="col-lg-5">
-                  <img class="img-thumbnail p-3" src="img/about.jpg" alt="">
+                  <img class="img-thumbnail p-3" src="{{ asset('img/about.jpg') }}" alt="">
               </div>
               <div class="col-lg-7 mt-5 mt-lg-0">
                   <small class="bg-primary text-white text-uppercase font-weight-bold px-1">Who We Are</small>

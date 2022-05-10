@@ -6,6 +6,7 @@
             <h1 class="mt-2 mb-5">Latest From Blog</h1>
         </div>
         <div class="row">
+            @foreach($blog as $blogs)
             <div class="col-md-6 mb-5">
                 <div class="position-relative">
                     <img class="img-fluid w-100" src="img/blog-1.jpg" alt="">
@@ -22,12 +23,13 @@
                         </div>
                         <div class="d-flex align-items-center ml-4">
                             <i class="far fa-bookmark text-primary"></i>
-                            <a class="text-muted ml-2" href="">Web Design</a>
+                            <a class="text-muted ml-2" href="">{{$blogs->category}}</a>
                         </div>
                     </div>
                     <a class="h5 font-weight-bold" href="">Kasd tempor diam sea justo dolor kasd amet dolor labore amet clita est diam dolor</a>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 </div>
