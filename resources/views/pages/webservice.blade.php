@@ -18,6 +18,20 @@
             <p>Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat</p>
         </div>
     </div>
+    <div class="container">
+        <div class="container">
+            @foreach($webservice->subservice as $subserv)
+            <div class="d-flex">
+                <i class="{{$subserv->icon}}"></i> &nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="d-flex flex-column">
+                    <h4 class="font-weight-bold mb-3">{{$subserv->name}}</h4>
+                    <p>Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat</p>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
 </div>
 @include('pages.footer')
 @endsection

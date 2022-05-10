@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Service extends Model
+class SubService extends Model
 {
     use HasFactory;
-    public function subservice()
-    {
-        return $this->hasMany(SubService::class);
-    }
+    protected $fillable = [
+        'icon',
+        'name',
+        'description',
+    ];
 }

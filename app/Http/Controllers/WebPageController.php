@@ -36,11 +36,14 @@ class WebPageController extends Controller
         Contact::create(['name' => $request->name,'email'=>$request->email, 'subject'=>$request->subject,'message'=>$request->message]);
     }
     public function webservice(){
-        $webservice = Service::where('title', 'Web Design')->first();
+        $webservice = Service::with(['subservice'])->where('title', 'Web Design')->first();
         return view('pages.webservice', compact('webservice'));
     }
     public function development(){
-        $development = Service::where('title', 'Development')->first();
+        $development = Service::with(['subservice'])->where('title', 'Development')->first();
         return view('pages.devservice', compact('development'));
+    }
+    public function allservice(){
+        
     }
 }
