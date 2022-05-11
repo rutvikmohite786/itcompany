@@ -27,22 +27,6 @@
                           </div>
                       </div>
                       @endforeach
-                      <!-- <div class="col-md-6 mb-5">
-                          <div class="d-flex flex-column align-items-center justify-content-center bg-primary p-4">
-                              <h3>Premium</h3>
-                              <h1 class="display-4 mb-0">
-                                  <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>99<small class="align-bottom" style="font-size: 16px; line-height: 40px;">/
-                                      Mo</small>
-                              </h1>
-                          </div>
-                          <div class="border border-top-0 d-flex flex-column align-items-center py-4">
-                              <p>HTML5 & CSS3</p>
-                              <p>Bootstrap 4</p>
-                              <p>Responsive Layout</p>
-                              <p>Compatible With All Browsers</p>
-                              <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2">Order Now</a>
-                          </div>
-                      </div>-->
                   </div>
               </div>
               <div class="col-lg-5 mb-5">

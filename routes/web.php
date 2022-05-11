@@ -16,10 +16,10 @@ use App\Http\Controllers\WebPageController;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
-Route::get('home', [HomePageController::class, 'index'])->name('home');
+});*/
+Route::get('/', [HomePageController::class, 'index'])->name('homepage');
 Route::controller(WebPageController::class)->group(function () {
     Route::get('/about', 'about')->name('about');
     Route::get('/service', 'service')->name('service');
@@ -32,6 +32,14 @@ Route::controller(WebPageController::class)->group(function () {
 
 });
 
-Route::get('/admin', function () {
+Route::get('/admin/home', function () {
     return view('pages.admin');
-});
+})->name('admin.home');
+
+Route::get('/admin/login', function () {
+    return view('pages.login');
+})->name('admin.login');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
