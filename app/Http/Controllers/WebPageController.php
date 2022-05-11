@@ -43,6 +43,10 @@ class WebPageController extends Controller
         $development = Service::with(['subservice'])->where('title', 'Development')->first();
         return view('pages.devservice', compact('development'));
     }
+    public function application(){
+        $application = Service::with(['subservice'])->where('title', 'App Development')->first();
+        return view('pages.application', compact('application'));
+    }
     public function allservice(){
         
     }

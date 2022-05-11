@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col-lg-4 mb-5">
                   <small class="bg-primary text-white text-uppercase font-weight-bold px-1">Meet The Team</small>
-                  <h1 class="mt-2 mb-3">Meet Experts of Behind Work</h1>
+                  <h1 class="mt-2 mb-3">Meet Experts Behind Work</h1>
                   <h4 class="font-weight-normal text-muted mb-4">Eirmod diam magna sed sea rebum, elitr diam dolor lorem ipsum, ipsum stet magna ea diam vero stet vero</h4>
                   <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Meet All Experts</a>
               </div>

@@ -27,6 +27,7 @@ Route::controller(WebPageController::class)->group(function () {
     Route::get('/contact', 'contact')->name('contact');
     Route::get('/development', 'development')->name('development');
     Route::get('/webservice', 'webservice')->name('webservice');
+    Route::get('/application', 'application')->name('application');
     Route::get('/allservice', 'allservice')->name('allservice');
     Route::post('/contact/submit', 'contactStore')->name('contact.store');
 
