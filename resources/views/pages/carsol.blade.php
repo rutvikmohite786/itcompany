@@ -1,11 +1,11 @@
   <!-- Carousel Start -->
   <div class="container-fluid p-0 mb-5">
       <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-          <ol class="carousel-indicators">
+        <!--  <ol class="carousel-indicators">
               <li data-target="#header-carousel" data-id="1" data-slide-to="0" class="carsol"></li>
               <li data-target="#header-carousel" data-id="2" data-slide-to="1" class="active carsol"></li>
               <li data-target="#header-carousel" data-id="3" data-slide-to="2" class="carsol"></li>
-          </ol>
+          </ol>-->
           <div class="carousel-inner">
               @foreach($carsol as $carsol_info)
               <div class="carousel-item active" data-id="{{$carsol_info->id-1}}">

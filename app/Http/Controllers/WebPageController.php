@@ -45,7 +45,7 @@ class WebPageController extends Controller
     }
     public function application(){
         $application = Service::with(['subservice'])->where('title', 'App Development')->first();
-        return view('pages.application', compact('application'));
+        return view('pages.appservice', compact('application'));
     }
     public function allservice(){
         
