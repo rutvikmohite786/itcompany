@@ -14,7 +14,7 @@
                       <div class="p-5" style="width: 100%; max-width: 900px;">
                           <h5 class="text-white text-uppercase mb-md-3">Creative Agency</h5>
                           <h1 class="display-3 text-white mb-md-4">{{$carsol_info->title}}</h1>
-                          <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                          <a href="/about" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
                       </div>
                   </div>
               </div>
