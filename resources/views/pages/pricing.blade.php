@@ -2,7 +2,7 @@
   <div class="container-fluid pt-5">
       <div class="container">
           <div class="row">
-              <div class="col-lg-7">
+              <div class="col-lg-6">
                   <div class="row">
                       @foreach($pricing as $price)
                       @php
@@ -29,7 +29,7 @@
                       @endforeach
                   </div>
               </div>
-              <div class="col-lg-5 mb-5">
+              <div class="col-lg-6 mb-5">
                   <small class="d-inline bg-primary text-white text-uppercase font-weight-bold px-1">Our Pricing Plan</small>
                   <h1 class="mt-2 mb-3">We Offer Affordable and Flexible Packages</h1>
                   <h4 class="font-weight-normal text-muted mb-4">Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam, est erat lorem. Est magna sea clita diam tempor elitr</h4>
