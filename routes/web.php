@@ -38,9 +38,9 @@ Route::get('/admin/home', function () {
 })->name('admin.home');
 
 Route::get('/admin/login', function () {
-    return view('pages.login');
+    return view('auth.login');
 })->name('admin.login');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
